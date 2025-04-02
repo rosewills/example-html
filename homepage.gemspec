@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Rose Wills"]
   spec.email         = ["rmvwills@gmail.com"]
 
-  spec.summary       = "Simple webpage; based on Infinite Loops theme."
+  spec.summary       = "Simple webpage based on Infinite Loops theme."
   spec.homepage      = "https://rosewills.github.io/homepage"
   spec.license       = "MIT"
 
