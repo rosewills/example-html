@@ -1,0 +1,12 @@
+_includes/*
+_layouts/article.html
+_layouts/blogpost.html
+_layouts/default.html
+_layouts/page.html
+_sass/theme*
+assets/css/styles.scss
+assets/libs/*
+Gemfile
+infiniteloops.gemspec
+LICENSE.txt
+README.md

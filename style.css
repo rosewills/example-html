@@ -1,0 +1,226 @@
+:root {
+	--ff-heading: "Arvo", serif;
+	--ff-body: "Nanum Myeongjo", serif;
+	--ff-monospace: "Cutive Mono", monospace;
+	
+	--fw-regular: 400;
+	--fw-semi-bold: 500;
+	--fw-bold: 700;
+
+	--fs-body: 1rem;
+	--fs-primary-heading: 2.5rem;
+	--fs-secondary-heading: 1.875rem;
+	--fs-nav: 1.5rem;
+	--fs-button: 1rem;
+
+	/* Colors */
+	--dark0:  rgb(46, 52, 64);
+	--dark1:  rgb(59, 66, 82);
+	--dark2:  rgb(67, 76, 94);
+	--dark3:  rgb(76, 86, 106);
+
+	--gray0:  rgb(108, 108, 108);
+	--gray1:  rgb(128, 128, 128);
+	--gray2:  rgb(135, 135, 135);
+	--gray3:  rgb(169, 169, 169);
+
+	--elephant0:  rgb(141, 132, 127);
+	--elephant1:  rgb(142, 132, 126);
+	--elephant2:  rgb(173, 166, 162);
+	--elephant3:  rgb(212, 209, 207);
+
+	--light0: rgb(216, 222, 233);
+	--light1: rgb(229, 233, 240);
+	--light2: rgb(236, 239, 244);
+	--light3: rgb(255, 255, 255);
+
+	--frost0: rgb(143, 188, 187);
+	--frost1: rgb(136, 192, 208);
+	--frost2: rgb(129, 161, 193);
+	--frost3: rgb(94, 129, 172);
+
+	--red0: rgb(191, 97, 106);
+	--red1: rgb(139, 0, 0);
+
+	--orange0: rgb(208, 135, 112);
+	--orange1: rgb(216, 99, 63);
+
+	--yellow0: rgb(255, 255, 209);
+	--yellow1: rgb(236, 236, 104);
+	--yellow2: rgb(206, 195, 41);
+	--yellow3: rgb(189, 171, 12);
+	--yellow4: rgb(218, 158, 37);
+
+	--green0:  rgb(163, 190, 140);
+	--green1:  rgb(102, 175, 38);
+	--green2:  rgb(88, 136, 47);
+	--green3:  rgb(79, 122, 42);
+
+	--lilac0: rgb(180, 142, 173);
+	--lilac1: rgb(155, 98, 144);
+	--lilac2: rgb(128, 67, 115);
+
+}
+
+@media (min-width: 50em) {
+	:root {
+		--fs-body: var(--fs-500);
+		--fs-primary-heading: var(--fs-900);
+		--fs-secondary-heading: var(--fs-800);
+		--fs-nav: var(--fs-300);
+	}
+}
+
+
+/* .arvo-regular {
+	font-family: "Arvo", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+  
+.arvo-bold {
+	font-family: "Arvo", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.arvo-regular-italic {
+	font-family: "Arvo", serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.arvo-bold-italic {
+	font-family: "Arvo", serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.nanum-myeongjo-regular {
+	font-family: "Nanum Myeongjo", serif;
+	font-weight: 400;
+	font-style: normal;
+
+.cutive-mono-regular {
+	font-family: "Cutive Mono", monospace;
+	font-weight: 400;
+	font-style: normal;
+}
+
+} */
+  
+
+/* CSS Reset (source: https://piccalil.li/blog/a-more-modern-css-reset/) */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+/* body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+} */
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+/* Set core body defaults */
+body {
+	line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+/* input, button,
+textarea, select {
+  font: inherit;
+} */
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+
+/* Utility Classes */
+
+.fw-bold { font-weight: var(--fw-bold); }
+.fw-semi-bold { font-weight: var(--fw-semi-bold); }
+.fw-regular { font-weight: var(--fw-regular); }
+
+.fs-primary-heading { font-size: var(--fs-primary-heading); }
+.fs-secondary-heading { font-size: var(--fs-secondary-heading); }
+
+.fs-300 { font-size: var(--fs-300); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-600 { font-size: var(--fs-600); }
+
+
+/* General Styling */
+
+body {
+	font-size: var(--fs-body);
+	font-family: var(--ff-body);
+	color: var(--clr-primary-400);
+}
